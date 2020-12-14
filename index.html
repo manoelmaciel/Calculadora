@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <!-- Calculadora -->
+        <div class="menu">
+            <!-- Menu -->
+            Modo básico 
+        </div>
+        <div class="respostas">
+            <textarea class="resposta">
+                
+            </textarea>
+        </div>
+        <div class="visor">
+            <!-- Visor -->
+            <!-- p class="mostrador"></p -->
+        </div>
+        <div class="teclado">
+            <!-- Teclado -->
+            <!-- ... teclado-linha 1 ... -->
+            <div class="teclado-linha">
+                <div class="teclado--botao" onclick="clicou('7')">7</div>
+                <div class="teclado--botao" onclick="clicou('8')">8</div>
+                <div class="teclado--botao" onclick="clicou('9')">9</div>
+                <div class="teclado--botao" onclick="clicouOperador(' / ')">&#247;</div>
+                <div class="teclado--botao" onclick="voltar(expressao)">&#8629</div>
+                <div class="teclado--botao" onclick="apagar()">C</div>
+            </div>
+
+            <!-- ... teclado-linha 2 ... -->
+            <div class="teclado-linha">
+                <div class="teclado--botao" onclick="clicou('4')">4</div>
+                <div class="teclado--botao" onclick="clicou('5')">5</div>
+                <div class="teclado--botao" onclick="clicou('6')">6</div>
+                <div class="teclado--botao" onclick="clicouOperador(' * ')">x</div>
+                <div class="teclado--botao" onclick="clicou('(')">(</div>
+                <div class="teclado--botao" onclick="clicou(')')">)</div>
+            </div>
+            <!-- ... teclado-linha 3 ... -->
+            <div class="teclado-linha">
+            <div class="teclado--botao" onclick="clicou('1')">1</div>
+                <div class="teclado--botao" onclick="clicou('2')">2</div>
+                <div class="teclado--botao" onclick="clicou('3')">3</div>
+                <div class="teclado--botao" onclick="clicouOperador(' - ')">-</div>
+                <div class="teclado--botao" onclick="clicouOperador(' ** 2')">x&#x00B2</div>
+                <div class="teclado--botao" onclick="clicouOperador(' ** (1/2)')">&#8730</div>
+            </div>
+            <!-- ... teclado-linha 4 ... -->
+            <div class="teclado-linha ultima-linha">
+                <div class="teclado--botao" onclick="clicou('0')">0</div>
+                <div class="teclado--botao" onclick="clicou('.')">,</div>
+                <div class="teclado--botao" onclick="clicouOperador(' / 100')">%</div>
+                <div class="teclado--botao" onclick="clicouOperador(' + ')">+</div>
+                <div class="teclado--botao igual" onclick="resolva(expressao)">=</div>
+            </div>
+
+        </div><!-- Fim ... Teclado! -->
+
+    </div><!-- Fim ... Calculadora! -->
+
+    <script src="script.js"></script>
+ 
+</body>
+
+</html>

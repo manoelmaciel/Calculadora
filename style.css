@@ -1,0 +1,75 @@
+body {
+    margin: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.respostas {
+    padding: 2px;
+    background-color: #fff;
+    height: 120px;
+    border-bottom: 1px solid #000;
+}
+
+.resposta {
+    margin: 15px;
+    padding: 15px;
+}
+
+textarea {
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.visor {
+    padding: 2px;
+    background-color: #444;
+    height: 60px;
+    border-bottom: 1px solid #000;
+    color: #fff;
+}
+
+.calculadora {
+    background-color: #333;
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+.teclado {
+    padding: 7px 10px 10px 10px;
+}
+
+.teclado-linha {
+    display: flex;   
+}
+
+.teclado--botao {
+    background-color: #444;
+    margin: 2px;
+    border: 1px solid #000;
+    padding: 5px;
+    width: 40px;
+    height: 22px;
+    color: #fff;
+	display: flex;	
+	justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.igual {
+    width: 96px;
+    background-color: green;
+}
