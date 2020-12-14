@@ -2,7 +2,7 @@ var expressao = '';
 var acumulado = '';
 // var temp;
 var elementoVisor = document.querySelector(".visor");
-var elementoRespostas = document.querySelector(".respostas");
+// var elementoRespostas = document.querySelector(".respostas");
 var elementoResposta = document.querySelector(".resposta");
 
 function clicou(n) {
@@ -29,7 +29,7 @@ function resolva(expressao) {
             zeraExpressao(); 
             // zeraVisor();
         } else {
-            alert(resultado);
+            // alert(resultado);
             elementoVisor.innerHTML = expressao + "<br />" + "<br />" + "Expressão mal formada!";
         }
     }
