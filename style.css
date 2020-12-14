@@ -23,10 +23,8 @@ body {
 }
 
 .resposta { /* Esse é o textArea das respostas */
-    margin: 15px;
-    padding: 15px;
-    height: 60px;
-    width: 250px;
+    height: 100px;
+    width: 350px;
 }
 
 textarea {
@@ -39,7 +37,7 @@ textarea {
 
 .visor {
     padding: 2px;
-    background-color: #444;
+    background-color: #be4d4d;
     height: 60px;
     border-bottom: 1px solid #000;
     color: #fff;

@@ -1,9 +1,9 @@
 var expressao = '';
-var acumulado = '';
+var respostaAcumulada = '';
 // var temp;
 var elementoVisor = document.querySelector(".visor");
 // var elementoRespostas = document.querySelector(".respostas");
-var elementoResposta = document.querySelector(".resposta");
+var elementoResposta = document.querySelector(".resposta"); // textArea
 
 function clicou(n) {
     expressao += n; 
@@ -21,12 +21,14 @@ function clicouOperador(operador) {
 }
 
 function resolva(expressao) {
+    // alert(expressao);
     if (expressao != '') {
         resultado = eval(expressao);
-        if (resultado !== undefined) {
+        if (resultado != undefined) {          
             mostraResposta();
             acumulaRespostas();
             zeraExpressao(); 
+            // alert(expressao);
             // zeraVisor();
         } else {
             // alert(resultado);
@@ -41,13 +43,15 @@ function mostraResposta() {
 }
 
 function acumulaRespostas() {
-    acumulado += expressao + " = " + resultado + "<br />";  
-    elementoRespostas.innerHTML = acumulado;
-    elementoResposta = '';
+    // alert('acumulaResposta')
+    respostaAcumulada = expressao + " = " + resultado + '\n' + respostaAcumulada;  
+    elementoResposta.innerHTML = respostaAcumulada;
+    // elementoResposta = '';
     // atualizarExpressao(resultado);
 }
 
 function zeraExpressao() {  
+    // alert(expressao);
     expressao = '';
 }
 
